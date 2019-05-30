@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: $query_lg) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $header_teal;
+    margin: 0;
+    padding: 5vw;
+    box-shadow: 0 4px 2px -2px $dark_gray;
+  
+    @media screen and (min-width: $query_md) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: $query_xl) {
+      font-size: 5rem;
+    }
+  }
+
+  a {
+    color: $header_teal;
+    text-decoration: none;
+    font-weight: 600;
+  
+    :hover {
+      color: $dark_gray;
+    }
+    
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 3vw;
+    font-weight: 900;
+  
+    @media screen and (min-width: $query_xl) {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+  
