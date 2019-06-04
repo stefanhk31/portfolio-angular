@@ -1,59 +1,379 @@
+/*****************************
+TABLE OF CONTENTS:
+GLOBAL ELEMENTS:
+    Body
+    Headers
+    Links
+    Footer
+SECTIONS:
+    Top Navigation Bar
+    Topnav Links
+    Topnav Menu
+    About Me
+    Portfolio
+    Contact
+ADDITIONAL PAGES:
+  Case Study
+
+
+/******************************
+GLOBAL ELEMENTS
+*******************************/
+
+/******************************
+Body
+*******************************/
+
 body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    font-family: 'Heebo', sans-serif;
-    font-size: 16px;
-    line-height: 2rem;
-    background-color: white;
-    margin: 0;
-    padding: 0;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  line-height: 2rem;
+  background-color: $white;
 
-    @media screen and (min-width: $query_lg) {
-        font-size: 2rem;
-        line-height: 2.5rem;
-      }
-
-  }
-
-  h2 {
+  @media screen and (min-width: 992px) {
     font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: $header_teal;
-    margin: 0;
-    padding: 5vw;
-    box-shadow: 0 4px 2px -2px $dark_gray;
-  
-    @media screen and (min-width: $query_md) {
-      font-size: 3rem;
-    }
-    @media screen and (min-width: $query_xl) {
-      font-size: 5rem;
-    }
+    line-height: 2.5rem;
   }
+}
 
+/******************************
+Headers
+*******************************/
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $header_teal;
+  box-shadow: 0 4px 2px -2px $dark_gray;
+
+  @media screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 5rem;
+  }
+}
+
+/******************************
+Links
+*******************************/
+
+a {
+  color: $header_teal;
+  text-decoration: none;
+  font-weight: 600;
+
+  :hover {
+    color: $dark_gray;
+  }
+  
+}
+
+/******************************
+Footer 
+*******************************/
+
+footer {
+  font-weight: 900;
+
+  @media screen and (min-width:1200px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+/******************************
+SECTIONS
+*******************************/
+
+/******************************
+Top Navigation Bar
+*******************************/
+
+.topnav {
+  color: $header_teal;
+  background-color: $white;
+  border-top: 1px solid $med_gray;
+  border-bottom: 1px solid $med_gray;
+  box-shadow: 1px 1px $light_gray;
+
+/******************************
+Topnav Links
+*******************************/
   a {
     color: $header_teal;
     text-decoration: none;
-    font-weight: 600;
-  
+    font-size: 1rem;
+    font-weight: 400;
+
     :hover {
-      color: $dark_gray;
+      color: $white;
+      background-color: $header_teal;
+    }
+
+    @media screen and (min-width: 576px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.2rem;
     }
     
+    @media screen and (min-width: 992px) {
+      font-size: 2rem;
+      padding: 2vw;
+    }
+
+    @media screen and (min-width:1200px) {
+      font-size: 3rem;
+      padding: 2vw;
+    }
+  }
+}
+
+/******************************
+Topnav Menu (Dropdown for mobile, row for all other devices)
+*******************************/
+
+.topnav {
+  a {
+    color: $header_teal;
+    display: flex;
+    flex-direction: column;
   }
 
-  footer {
+  :hover {
+    color: $white;
+    background-color: $header_teal;
+  }
+
+  .topnav-menu {
+    position: relative;
+    display: inline-block;
+  
+    .topnav-sections {
+      display: none;
+      position: absolute;
+      right: 1vw;
+      background-color: $white;
+      border: 1px solid $med_gray;
+      box-shadow: 1px $light_gray;
+      z-index: 1;
+  
+      a {
+        color: $black;
+      }
+  
+      :hover {
+        color: $white;
+      }
+  
+      @media screen and (min-width: 576px) {
+        display: flex;
+        flex-direction: row;
+        border: 0;
+      }
+    }
+  
+    .topnav-sections_ToggleShow {
+      display: flex;
+      flex-direction: column;
+    }  
+  
+    .menu-icon {
+      padding: 22px 25px;
+      color: $header_teal;
+      border: 0;
+      background-color: $white;
+  
+      @media screen and (min-width: 576px) {
+        display: none;
+      }
+    }
+  
+    .menu-icon_Toggle {
+      color: $white;
+      background-color: $header_teal;
+    }
+  }
+}
+
+
+/******************************
+About Me
+*******************************/
+
+#about-me {
+  background-color: $light_gray;
+  position: relative;
+  padding-top: 5vw;
+  border-top: 1px solid $med_gray;
+  border-bottom: 1px solid $med_gray;
+  box-shadow: 1px 1px $light_gray;
+
+  .about-me-container {
+    display: flex;
+
+    .about-me-text {
+      font-size: 1.5rem;
+      margin: 5vw;
+      color: $black;
+
+      @media screen and (min-width: 768px) {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        line-height: 4rem;
+      }
+
+      @media screen and (min-width:1200px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+  }
+}
+
+/******************************
+Portfolio
+*******************************/
+
+#portfolio {
+  position: relative;
+  margin: 5vw;
+
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+    }
+    .portfolio-item {
+      flex-direction: column;
+      align-self: center;
+      padding-bottom: 5vw;
+
+      @media screen and (min-width: 576px) {
+        flex-basis: 50%;
+      }
+      .portfolio-item-header {
+          color: $header_teal;
+    
+          a:hover {
+            color: $dark_gray;
+          }
+
+          @media screen and (min-width:1200px) {
+            font-size: 4.5rem;
+          }
+
+        }
+      .sample-image {
+          display: flex;
+          width: 90%;
+          border: 3px solid $dark_gray;
+        
+          @media screen and (min-width:1200px) {
+            width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/******************************
+Contact
+*******************************/
+
+#contact {
+  background-color: $light_gray;
+  margin: 0 -5vw;
+  padding: 5vw;
+  border-top: 1px solid $med_gray;
+  border-bottom: 1px solid $med_gray;
+  box-shadow: 1px 1px $light_gray;
+
+  .media-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding-top: 3vw;
-    font-weight: 900;
-  
-    @media screen and (min-width: $query_xl) {
+    justify-content: space-evenly;
+    margin-top: 3vw;
+    padding-bottom: 3vw;
+
+    .external-link {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem;
+      align-self: center;
+      align-items: center;
+      text-decoration: none;
+      background-color: $header_teal;
+      color: $white;
+      padding: 2vw;
+      border: 3px solid $dark_gray;
+      border-radius: 50%;
+
+      @media screen and (min-width:1200px) {
+        line-height: 4rem;
+        font-size: 4rem;
+      }
+
+    }
+
+    a:hover {
+      color: $dark_gray;
+    }
+
+    #my-photo {
+      display: none;
+
+      @media screen and (min-width: 992px) {
+        display: flex;
+        border: 3px solid $dark_gray;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+/******************************
+ADDITIONAL PAGES
+*******************************/
+
+/******************************
+Case Study
+*******************************/
+
+.case-study {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid $med_gray;
+  box-shadow: 1px 1px $light_gray;
+
+  .case-study-header {
+    background-color: $light_gray;
+  }
+
+  .sample-image-fullpage {
+    display: flex;
+    margin: 3vw;
+    width: 90%;
+    border: 3px solid $dark_gray;
+  }
+
+  .case-study-text {
+    margin: 3vw;
+    
+    @media screen and (min-width:1200px) {
       font-size: 3rem;
       line-height: 3rem;
     }
   }
-  
+}
