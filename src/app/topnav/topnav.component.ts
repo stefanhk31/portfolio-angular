@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'topnav',
@@ -11,5 +12,7 @@ export class TopnavComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  //faBars = faBars;
 
 }

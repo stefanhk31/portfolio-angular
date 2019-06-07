@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './topnav/topnav.component';
@@ -24,6 +25,7 @@ import { Item2Component } from './portfolio/portfolio-items/item2/item2.componen
   ],
   imports: [
     BrowserModule,
+    //FontAwesomeModule,
     RouterModule.forRoot([
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
@@ -33,9 +35,11 @@ import { Item2Component } from './portfolio/portfolio-items/item2/item2.componen
       ] },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' }
-    ])
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

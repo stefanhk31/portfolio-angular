@@ -37,18 +37,10 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   color: $header_teal;
-  box-shadow: 0 4px 2px -2px $dark_gray;
-
-  @media screen and (min-width: 768px) {
-    font-size: 3rem;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 5rem;
-  }
 }
 
 /******************************
-Links
+Links & Buttons
 *******************************/
 
 a, .navbar a {
@@ -61,6 +53,7 @@ a, .navbar a {
   }
   
 }
+
 
 /******************************
 Footer 
