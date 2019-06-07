@@ -8,6 +8,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { Item1Component } from './portfolio/portfolio-items/item1/item1.component';
+import { Item2Component } from './portfolio/portfolio-items/item2/item2.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,19 @@ import { AboutComponent } from './about/about.component';
     WelcomeComponent,
     PortfolioComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    Item1Component,
+    Item2Component
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'portfolio', component: PortfolioComponent },
+      { path: 'portfolio', component: PortfolioComponent, children: [
+        { path: 'item1', component: Item1Component },
+        { path: 'item2', component: Item2Component }
+      ] },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' }
     ])
