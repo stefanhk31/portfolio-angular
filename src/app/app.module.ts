@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './topnav/topnav.component';
@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { Item1Component } from './portfolio/portfolio-items/item1/item1.component';
 import { Item2Component } from './portfolio/portfolio-items/item2/item2.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -21,20 +22,20 @@ import { Item2Component } from './portfolio/portfolio-items/item2/item2.componen
     ContactComponent,
     AboutComponent,
     Item1Component,
-    Item2Component
+    Item2Component,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
-    //FontAwesomeModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
-      { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'portfolio', component: PortfolioComponent, children: [
         { path: 'item1', component: Item1Component },
         { path: 'item2', component: Item2Component }
       ] },
-      { path: 'welcome', component: WelcomeComponent },
-      { path: '', redirectTo: 'welcome', pathMatch: 'full' }
+      { path: 'about', component: AboutComponent },
+      { path: 'welcome', redirectTo: '', pathMatch: 'full' }
     ]),
   ],
   providers: [],

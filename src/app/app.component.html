@@ -1,3 +1,6 @@
-<topnav></topnav> 
-<router-outlet></router-outlet>
-
+<div *ngIf="isWelcome; else contentBlock">
+    <welcome></welcome>
+</div>
+<ng-template #contentBlock>
+    <content></content>
+</ng-template>
