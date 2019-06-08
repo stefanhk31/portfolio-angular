@@ -2,13 +2,13 @@
     <div class="container">
         <h2>Welcome!</h2>
         <div>
-            <a routerLink="/about">About Me</a>
+            <a routerLink="/about" (click)="toggleWelcome()" >About Me</a>
         </div>
         <div>
-            <a routerLink="/portfolio">Portfolio</a>
+            <a routerLink="/portfolio" (click)="toggleWelcome()">Portfolio</a>
         </div>
         <div>
-            <a routerLink="/contact">Get In Touch</a>
+            <a routerLink="/contact" (click)="toggleWelcome()">Get In Touch</a>
         </div>
     </div>
 </div>

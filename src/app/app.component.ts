@@ -15,6 +15,11 @@ export class AppComponent {
   ngOnInit() {
       this.isWelcome = this.location.isCurrentPathEqualTo("");
   }
+
+  toggleWelcome() {
+    this.isWelcome = !this.isWelcome;
+  }
+
 }
 
 
