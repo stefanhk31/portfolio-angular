@@ -9,10 +9,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { Item1Component } from './portfolio/portfolio-items/item1/item1.component';
-import { Item2Component } from './portfolio/portfolio-items/item2/item2.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-items.component';
 
 @NgModule({
   declarations: [
@@ -22,20 +21,16 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioComponent,
     ContactComponent,
     AboutComponent,
-    Item1Component,
-    Item2Component,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioItemsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: 'contact', component: ContactComponent },
-      { path: 'portfolio', component: PortfolioComponent, children: [
-        { path: 'item1', component: Item1Component },
-        { path: 'item2', component: Item2Component }
-      ] },
+      { path: 'portfolio', component: PortfolioComponent },
       { path: 'about', component: AboutComponent },
       { path: 'welcome', redirectTo: '', pathMatch: 'full' }
     ]),
