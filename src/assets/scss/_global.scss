@@ -1,20 +1,3 @@
-/*****************************
-TABLE OF CONTENTS:
-GLOBAL ELEMENTS:
-    Body
-    Headers
-    Links
-    Footer
-
-
-/******************************
-GLOBAL ELEMENTS
-*******************************/
-
-/******************************
-Body
-*******************************/
-
 body {
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
@@ -26,25 +9,25 @@ body {
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
 }
 
-/******************************
-Headers
-*******************************/
+h1, h2, h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: $med_teal;
+}
+
+h1 {
+  font-size: 3rem;
+}
 
 h2 {
   font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: $header_teal;
 }
 
-/******************************
-Links & Buttons
-*******************************/
-
 a, .navbar a {
-  color: $header_teal;
+  color: $med_teal;
   text-decoration: none;
   font-weight: 600;
 
@@ -55,10 +38,6 @@ a, .navbar a {
 }
 
 
-/******************************
-Footer 
-*******************************/
-
 footer {
   font-weight: 900;
 
@@ -66,4 +45,29 @@ footer {
     font-size: 3rem;
     line-height: 3rem;
   }
+}
+
+.welcome {
+  background-image: linear-gradient($dark_teal, $med_teal);
+  
+  h1 {
+    color: $med_gray;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .welcome-links {
+    a {
+     background: $med_gray;
+     text-decoration: none;
+
+      &:hover {
+        color: $dark_teal;
+      }
+
+  }
+}
+
 }
