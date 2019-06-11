@@ -1,8 +1,35 @@
 <div class="portfolio-items" *ngIf="items && items.length">
   <div class="row">
-    <div class="col-xs-12 col-md-4" *ngFor="let item of items">
-        <h3>{{ item.itemName }}</h3>
-        <p>{{ item.itemTagline }}</p>
+    <div class="col-xs-12 col-md-4" *ngFor="let item of items" data-toggle="modal" [attr.data-target]="'#' + item.itemID">
+      <h3>{{ item.itemName }}</h3>
+      <p>{{ item.itemTagline }}</p>
+
+      <div class="modal fade" id={{item.itemID}}>
+        <div class="modal-dialog" role="document">
+          <div class="modal-header">
+            <h5>{{ item.itemName }}</h5>
+          </div>
+          <div class="modal-body">
+              <div>
+                  {{item.itemImage}}
+                </div>
+            <h6>Project: </h6>
+            <p>
+              {{ item.itemDescription.project }}
+            </p>
+            <h6>Tools Used: </h6>
+            <p>
+              {{ item.itemDescription.tech }}
+            </p>
+            <h6>Future Directions: </h6>
+            <p>
+              {{ item.itemDescription.future }}
+    
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
