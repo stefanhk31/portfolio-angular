@@ -16,7 +16,7 @@ export class AppComponent {
       this.isWelcome = this.location.isCurrentPathEqualTo("");
   }
 
-  toggleWelcome() {
+  toggleWelcome(): void {
     this.isWelcome = !this.isWelcome;
   }
 
