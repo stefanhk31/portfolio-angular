@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IPortfolioItem } from './portfolioItem';
 
 @Component({
   selector: 'portfolio-items',
@@ -12,7 +13,7 @@ export class PortfolioItemsComponent implements OnInit {
   ngOnInit() {
   }
 
-  items: any[] = [
+  items: IPortfolioItem[] = [
     {
       "itemID": "whereToDo",
       "itemName": "WhereToDo",

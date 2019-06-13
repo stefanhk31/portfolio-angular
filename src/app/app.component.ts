@@ -10,9 +10,10 @@ export class AppComponent {
 
   private isWelcome: boolean = false;
 
-  constructor(private location: Location) { }
+  constructor(private location: Location ) { }
 
-  ngOnInit() {
+
+  ngOnInit(): void {
       this.isWelcome = this.location.isCurrentPathEqualTo("");
   }
 
