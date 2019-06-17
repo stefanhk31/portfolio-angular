@@ -10,8 +10,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-
-
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-items.component';
