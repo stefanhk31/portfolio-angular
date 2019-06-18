@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
     providedIn: 'root'
 })
 export class PortfolioService {
-    private portfolioItemsSource = 'api/portfolio/portfolio-items.json';
+    private portfolioItemsSource = 'assets/api/portfolio/portfolio-items.json';
 
     constructor(private http: HttpClient) { }
 
@@ -21,8 +21,6 @@ export class PortfolioService {
     }
 
     private handleError(err: HttpErrorResponse) {
-      // in a real world app, we may send the server to some remote logging infrastructure
-      // instead of just logging it to the console
       let errorMessage = '';
       if (err.error instanceof ErrorEvent) {
         // A client-side or network error occurred. Handle it accordingly.
