@@ -16,18 +16,18 @@ export class CaseStudyComponent implements OnInit {
   constructor(private portfolioService: PortfolioService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    /*
+  
     const param = this.route.snapshot.paramMap.get('itemID');
     if (param) {
       this.getItem(param);
-    } */
+    }
 
   }
-/*
+
   getItem (itemID: string) {
     this.portfolioService.getItem(itemID).subscribe(
       item => this.item = item,
       );
-  } */
+  }
 
 }

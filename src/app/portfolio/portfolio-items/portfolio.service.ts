@@ -17,12 +17,14 @@ export class PortfolioService {
         return this.http.get<IPortfolioItem[]>(this.portfolioItemsSource)
     }
 
+    getItem(id: string): Observable<IPortfolioItem | undefined> {
+      return this.getPortfolioItems().pipe(
+       map((items: IPortfolioItem[]) => items.find(i => i.itemID === id))
+     ); 
+   }
+
   }
 
-  /*
-    getItem(id: string): Observable<IPortfolioItem | undefined> {
-       return this.getPortfolioItems().pipe(
-        map((items: IPortfolioItem[]) => items.find(i => i.itemID === id))
-      ); 
-    } */
+
+
  

@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-items.component';
+import { CaseStudyComponent } from './portfolio/case-study/case-study.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-i
     ContentComponent,
     FooterComponent,
     PortfolioItemsComponent,
+    CaseStudyComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-i
     RouterModule.forRoot([
       { path: 'contact', component: ContactComponent },
       { path: 'portfolio', component: PortfolioComponent },
+      { path: 'portfolio/case-study/:itemID', component: CaseStudyComponent },
       { path: 'about', component: AboutComponent },
       { path: 'welcome', redirectTo: '', pathMatch: 'full' }
     ])
