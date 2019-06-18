@@ -1,36 +1,46 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IPortfolioItem } from './portfolioItem';
+
+import { Observable, throwError } from 'rxjs';
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable({
     providedIn: 'root'
 })
 export class PortfolioService {
+    private portfolioItemsSource = 'api/portfolio/portfolio-items.json';
 
-    getPortfolioItems(): IPortfolioItem[] {
-        return [
-            {
-              "itemID": "whereToDo",
-              "itemName": "WhereToDo",
-              "itemTagline": "A to-do list app that geolocates tasks.",
-              "itemDescription": {
-                "project": "A short overview of what it does and why I did it.",
-                "tech": "The frameworks I used and things I learned from the experience.",
-                "future": "What I'd like to do in the future and/or what I would've done differently."
-              },
-              "itemImage": "This will be an image URL."
-            },
-            {
-              "itemID": "sitStandTimer",
-              "itemName": "Sit/Stand Timer",
-              "itemTagline": "A timer app used to remind you to change position while working.",
-              "itemDescription": {
-                "project": "A short overview of what it does and why I did it.",
-                "tech": "The frameworks I used and things I learned from the experience.",
-                "future": "What I'd like to do in the future and/or what I would've done differently."
-              },
-              "itemImage": "This will be an image URL."
-            }
-          ];
+    constructor(private http: HttpClient) { }
+
+    getPortfolioItems(): Observable<IPortfolioItem[]> {
+        return this.http.get<IPortfolioItem[]>(this.portfolioItemsSource).pipe(
+          tap(data => console.log('All: ' + JSON.stringify(data))),
+          catchError(this.handleError)
+          )
     }
 
-}
+    private handleError(err: HttpErrorResponse) {
+      // in a real world app, we may send the server to some remote logging infrastructure
+      // instead of just logging it to the console
+      let errorMessage = '';
+      if (err.error instanceof ErrorEvent) {
+        // A client-side or network error occurred. Handle it accordingly.
+        errorMessage = `An error occurred: ${err.error.message}`;
+      } else {
+        // The backend returned an unsuccessful response code.
+        // The response body may contain clues as to what went wrong,
+        errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
+      }
+      console.error(errorMessage);
+      return throwError(errorMessage);
+    }
+  }
+
+  /*
+    getItem(id: string): Observable<IPortfolioItem | undefined> {
+       return this.getPortfolioItems().pipe(
+        map((items: IPortfolioItem[]) => items.find(i => i.itemID === id))
+      ); 
+    } */
+ 

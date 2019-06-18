@@ -10,11 +10,15 @@ import { PortfolioService } from './portfolio.service';
 export class PortfolioItemsComponent implements OnInit {
 
   items: IPortfolioItem[] = [];
+  errorMessage: string = '';
 
   constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.items = this.portfolioService.getPortfolioItems();
+    this.portfolioService.getPortfolioItems().subscribe(
+      items => this.items = items,
+      error => this.errorMessage = <any>error
+    )
   }
 
 }

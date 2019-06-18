@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RootRoutingModule } from './root-routing.module';
@@ -29,6 +30,7 @@ import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-i
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RootRoutingModule,
     RouterModule.forRoot([
       { path: 'contact', component: ContactComponent },
