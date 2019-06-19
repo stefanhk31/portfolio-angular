@@ -1,0 +1,33 @@
+<div class="case-study" *ngIf="item">
+<div class="container" >  
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ item.itemName }}</h1>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <img src="{{item.itemImage}}">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>
+        What I did:
+      </h3>
+      <p>
+        {{item.itemDescription.project}}
+      </p>
+    </div>
+    <div class="col-12">
+        <h3>
+            What I used:
+        </h3>
+      <p>
+        {{item.itemDescription.tech}}
+      </p>
+    </div>
+    <div class="col-12">
+        <h3>Future directions:</h3>
+        <p>
+          {{ item.itemDescription.future}}
+        </p>
+    </div>
+  </div>   
+</div>

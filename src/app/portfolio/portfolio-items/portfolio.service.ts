@@ -1,36 +1,30 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IPortfolioItem } from './portfolioItem';
+
+import { Observable, throwError } from 'rxjs';
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable({
     providedIn: 'root'
 })
 export class PortfolioService {
+    private portfolioItemsSource = 'assets/api/portfolio/portfolio-items.json';
 
-    getPortfolioItems(): IPortfolioItem[] {
-        return [
-            {
-              "itemID": "whereToDo",
-              "itemName": "WhereToDo",
-              "itemTagline": "A to-do list app that geolocates tasks.",
-              "itemDescription": {
-                "project": "A short overview of what it does and why I did it.",
-                "tech": "The frameworks I used and things I learned from the experience.",
-                "future": "What I'd like to do in the future and/or what I would've done differently."
-              },
-              "itemImage": "This will be an image URL."
-            },
-            {
-              "itemID": "sitStandTimer",
-              "itemName": "Sit/Stand Timer",
-              "itemTagline": "A timer app used to remind you to change position while working.",
-              "itemDescription": {
-                "project": "A short overview of what it does and why I did it.",
-                "tech": "The frameworks I used and things I learned from the experience.",
-                "future": "What I'd like to do in the future and/or what I would've done differently."
-              },
-              "itemImage": "This will be an image URL."
-            }
-          ];
+    constructor(private http: HttpClient) { }
+
+    getPortfolioItems(): Observable<IPortfolioItem[]> {
+        return this.http.get<IPortfolioItem[]>(this.portfolioItemsSource)
     }
 
-}
+    getItem(id: string): Observable<IPortfolioItem | undefined> {
+      return this.getPortfolioItems().pipe(
+       map((items: IPortfolioItem[]) => items.find(i => i.itemID === id))
+     ); 
+   }
+
+  }
+
+
+
+ 
