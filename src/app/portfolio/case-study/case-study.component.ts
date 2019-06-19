@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IPortfolioItem } from '../portfolio-items/portfolioItem';
 import { PortfolioService } from '../portfolio-items/portfolio.service';
 
@@ -13,7 +13,9 @@ export class CaseStudyComponent implements OnInit {
 
   item: IPortfolioItem | undefined;
 
-  constructor(private portfolioService: PortfolioService, private route: ActivatedRoute) { }
+  constructor(private portfolioService: PortfolioService, 
+    private route: ActivatedRoute, 
+    private router: Router) { }
 
   ngOnInit() {
   
@@ -28,6 +30,10 @@ export class CaseStudyComponent implements OnInit {
     this.portfolioService.getItem(itemID).subscribe(
       item => this.item = item,
       );
+  }
+
+  onBack(): void {
+    this.router.navigate(['/portfolio']);
   }
 
 }
