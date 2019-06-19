@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -33,11 +33,11 @@ import { CaseStudyComponent } from './portfolio/case-study/case-study.component'
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RootRoutingModule,
+    //RootRoutingModule,
     RouterModule.forRoot([
-      { path: 'contact', component: ContactComponent },
-      { path: 'portfolio', component: PortfolioComponent },
       { path: 'portfolio/case-study/:itemID', component: CaseStudyComponent },
+      { path: 'portfolio', component: PortfolioComponent },
+      { path: 'contact', component: ContactComponent },
       { path: 'about', component: AboutComponent },
       { path: 'welcome', redirectTo: '', pathMatch: 'full' }
     ])
@@ -46,11 +46,5 @@ import { CaseStudyComponent } from './portfolio/case-study/case-study.component'
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  // Diagnostic only: inspect router configuration
-  constructor(router: Router) {
-    // Use a custom replacer to display function names in the route configs
-    const replacer = (key, value) => (typeof value === 'function') ? value.name : value;
 
-    console.log('Routes: ', JSON.stringify(router.config, replacer, 2));
-  }
 }
