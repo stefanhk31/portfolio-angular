@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio-angular';
+
+  private isWelcome: boolean = false;
+
+  constructor(private location: Location ) { }
+
+
+  ngOnInit(): void {
+      this.isWelcome = this.location.isCurrentPathEqualTo("");
+  }
+
+  toggleWelcome(): void {
+    this.isWelcome = !this.isWelcome;
+  }
+
 }
+
+
+
