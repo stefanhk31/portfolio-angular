@@ -3,3 +3,23 @@
 @import 'components/contact';
 @import 'components/portfolio/portfolio';
 
+.content {
+    .container {
+        @media(min-width: 768px) {
+            height: 100vh;
+        }
+    }
+
+    padding-top: 20px;
+    height: 100%;
+
+    p {
+        color: white;
+    }
+
+    &.about,&.portfolio,&.contact {
+        background: url('assets/img/background-placeholder.jpg');
+        background-size: cover;
+    }
+
+}
