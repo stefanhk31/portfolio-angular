@@ -1,47 +1,20 @@
 .welcome {
-    background-image: linear-gradient($dark_teal, $med_teal);
+    background-image: linear-gradient($dark_teal, $light_gray);
 
     h1 {
         color: $med_gray;
     }
 
-    p {
-        color: $white;
+    .opening-text {
+       color: $black;
     }
 
-    img {
+    img.img-thumbnail {
         border-radius: 50%;
+        border-color: $med_gray;
+        background: $med_gray;
     }
 
-    .welcome-links {
-        * {
-            position: relative;
-            margin: 10px 0;
-            padding-left: 10px;
-            border-radius: 3px;
-            background: $med_gray;
-            text-decoration: none;
 
-            &:hover {
-                color: $dark_teal;
-            }
-
-            &:after {
-                content: '\00bb';
-                position: absolute;
-                opacity: 0;
-                top: 0;
-                left: 90%;
-                transition: 0.5s;
-            }
-
-            &:hover:after {
-                opacity: 1;
-                right: 0;
-            }
-
-        }
-        
-    }
 
 }

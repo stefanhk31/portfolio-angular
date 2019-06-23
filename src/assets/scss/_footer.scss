@@ -1,6 +1,12 @@
 footer {
+    background: $light_gray;
+    color: $dark_teal;
     font-weight: 900;
-    border-top: 2px solid $dark_gray;
+
+    p {
+        margin: 0;
+        padding: .5rem;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 3rem;

@@ -1,3 +1,5 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,7 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
-    //{ path: 'portfolio', component: PortfolioComponent },
+    { path: 'portfolio', component: PortfolioComponent },
     { path: '', component: WelcomeComponent }
 
 ];
@@ -20,10 +22,12 @@ const routes: Routes = [
         WelcomeComponent,
         AboutComponent,
         ContactComponent,
-        //PortfolioComponent,
-        //PortfolioItemsComponent
+        PortfolioComponent,
+        PortfolioItemsComponent
     ],
     imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
         RouterModule.forRoot(routes)],
         exports: [RouterModule]
 })

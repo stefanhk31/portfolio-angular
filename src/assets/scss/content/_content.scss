@@ -22,4 +22,43 @@
         background-size: cover;
     }
 
+    .guiding-link {
+        * {
+            position: relative;
+            margin: 10px 0;
+            padding: 15px 10px;
+            border-radius: 3px;
+            background: $med_gray;
+            text-decoration: none;
+
+            &:hover {
+                color: $dark_teal;
+            }
+
+            &:after {
+                font-family: "Font Awesome 5 Free";
+                content: '\f054';
+                position: absolute;
+                opacity: 0;
+                top: 14px;
+                left: 90%;
+                transition: 0.5s;
+            }
+
+            &:hover:after {
+                opacity: 1;
+                right: 0;
+            }
+
+        }
+        
+    }
+
+    &.about,&.portfolio {
+        .guiding-link {
+            width: 33%;
+        }
+    }
+
+
 }
