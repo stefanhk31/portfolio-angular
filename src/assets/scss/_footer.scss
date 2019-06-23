@@ -1,0 +1,9 @@
+footer {
+    font-weight: 900;
+    border-top: 2px solid $dark_gray;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}

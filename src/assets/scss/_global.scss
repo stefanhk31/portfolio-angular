@@ -1,99 +1,67 @@
 body {
-  font-family: 'Heebo', sans-serif;
-  font-size: 16px;
-  line-height: 2rem;
-  background: $white;
-  max-width: 1600px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+    background: $white;
+    max-width: 1600px;
+    margin: 0;
+    padding: 0;
 
-  @media screen and (min-width: 992px) {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
+    @media screen and (min-width: 992px) {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  text-transform: uppercase;
-  color: $med_teal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    text-transform: uppercase;
+    color: $med_teal;
 }
 
 h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
-a, .navbar a {
-  color: $med_teal;
-  text-decoration: none;
-  font-weight: 600;
+a,
+.navbar a {
+    color: $med_teal;
+    text-decoration: none;
+    font-weight: 600;
 
-  :hover {
-    color: $dark_gray;
-  }
-  
+    :hover {
+        color: $dark_gray;
+    }
+
 }
 
-.topnav {
-  border-bottom: 2px solid $dark_gray;
-}
-
-
-footer {
-  font-weight: 900;
-  border-top: 2px solid $dark_gray;
-
-  @media screen and (min-width:1200px) {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-}
-
-
-.welcome, 
-.about, 
+.welcome,
+.about,
 .portfolio,
 .case-study,
 .contact {
-  .container {
-      @media(min-width: 768px) {
-       height: 100vh;
-      }
-   }
-   
-   padding-top: 20px;
-   height: 100%;
+    .container {
+        @media(min-width: 768px) {
+            height: 100vh;
+        }
+    }
 
-   p {
-     color: white;
-   }
+    padding-top: 20px;
+    height: 100%;
 
-}
-
-.welcome {
-  background-image: linear-gradient($dark_teal, $med_teal);
-  
-  h1 {
-    color: $med_gray;
-  }
-
-  p {
-    color: $white;
-  }
-
-  .welcome-links {
-    a {
-     background: $med_gray;
-     text-decoration: none;
-
-      &:hover {
-        color: $dark_teal;
-      }
-
-  }
-}
+    p {
+        color: white;
+    }
 
 }
+
