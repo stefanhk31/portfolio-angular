@@ -5,6 +5,8 @@
 
 .content {
     padding-top: 20px;
+    min-height: 750px;
+
     .container {
         @media(min-width: 768px) {
             height: 100vh;
@@ -15,6 +17,7 @@
     p {
         color: white;
     }
+
 
     &.about,&.portfolio,&.contact {
         background: url('assets/img/background-placeholder.jpg');
