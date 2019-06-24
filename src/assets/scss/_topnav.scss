@@ -1,0 +1,30 @@
+.topnav {
+    background: $dark_teal;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $dark_gray;
+        }
+
+    }
+
+    .navbar {
+        width: 100%;
+
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+
+        .navbar-toggler {
+            padding-top: 10px;
+        }
+
+        .fa {
+            color: white;
+        }
+
+    }
+
+}

@@ -1,23 +1,36 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-items.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
-    { path: 'portfolio', redirectTo: '/portfolio' },
-    { path: 'contact', redirectTo: '/contact'},
-    { path: 'about', redirectTo: '/about' },
-    { path: 'welcome', redirectTo: '', pathMatch: 'full' }
+    { path: 'about', component: AboutComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'portfolio', component: PortfolioComponent },
+    { path: '', component: WelcomeComponent }
+
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    declarations: [
+        WelcomeComponent,
+        AboutComponent,
+        ContactComponent,
+        PortfolioComponent,
+        PortfolioItemsComponent
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        RouterModule.forRoot(routes)],
+        exports: [RouterModule]
 })
 export class RootRoutingModule {
-  // Diagnostic only: inspect router configuration
-  constructor(router: Router) {
-    // Use a custom replacer to display function names in the route configs
-    const replacer = (key, value) => (typeof value === 'function') ? value.name : value;
 
-    console.log('Routes: ', JSON.stringify(router.config, replacer, 2));
-  }
 }
