@@ -23,6 +23,10 @@
 
         .fa {
             color: white;
+
+            &:hover {
+                color: $dark_gray;
+            }
         }
 
     }

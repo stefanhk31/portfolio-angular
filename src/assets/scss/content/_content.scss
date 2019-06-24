@@ -30,7 +30,7 @@
             margin: 10px 0;
             padding: 15px 10px;
             border-radius: 3px;
-            background: $med_gray;
+            background: $light_gray;
             text-decoration: none;
 
             &:hover {
@@ -50,6 +50,26 @@
             &:hover:after {
                 opacity: 1;
                 right: 0;
+            }
+
+        }
+
+        &.back-link {
+            * {
+                transition: 0.5s;
+                color: $med_teal;
+
+                &:hover {
+                    padding-left: 50px;
+                    color: $dark_teal;
+                }
+
+                &:after {
+                    content: '\f053';
+                    font-family: 'Font Awesome 5 Free';
+                    color: $dark_teal;
+                    left: 20px;
+                }
             }
 
         }
