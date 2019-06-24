@@ -1,6 +1,6 @@
 <div class="content case-study" *ngIf="item">
 <div class="container" >  
-  <div class="row">
+  <div class="row no-gutters">
     <div class="col-12">
       <h3>{{ item.itemName }}</h3>
     </div>
@@ -31,10 +31,12 @@
           {{ item.itemDescription.future}}
         </p>
     </div>
-    <div class="col-12 pull-right">
-      <button class="btn btn-secondary" (click)='onBack()'>
-        Back to Portfolio
-      </button>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="guiding-link back-link d-flex flex-column">
+            <a (click)='onBack()'>
+              Back to Portfolio
+            </a>
+      </div>
     </div>
   </div>   
 </div>

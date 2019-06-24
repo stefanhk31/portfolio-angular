@@ -1,5 +1,5 @@
 <div class="portfolio-items" *ngIf="items && items.length">
-  <div class="row">
+  <div class="row no-gutters">
     <div class="col-xs-12" *ngFor="let item of items">
       <a [routerLink]="['/portfolio/case-study', item.itemID]" >
         <h3>{{ item.itemName }}</h3>
