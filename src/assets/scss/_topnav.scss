@@ -1,5 +1,6 @@
 .topnav {
     background: $dark_teal;
+    margin-bottom: -5px;
 
     a {
         color: white;
@@ -12,6 +13,8 @@
 
     .navbar {
         width: 100%;
+        border: none;
+        margin-bottom: 0;
 
         .navbar-collapse {
             flex-grow: 0;
