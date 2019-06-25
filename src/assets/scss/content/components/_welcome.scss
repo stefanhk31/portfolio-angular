@@ -1,12 +1,22 @@
 .welcome {
     background-image: linear-gradient($dark_teal, $light_gray);
 
-    h1 {
-        color: $med_gray;
+    .welcome-text-wrapper {
+        padding-top: 25px;
+
+        @media(min-width: 768px) {
+            max-width: 400px;
+            padding-top: 0;
+        }
+
+        .opening-text {
+            color: $black;
+         }
+
     }
 
-    .opening-text {
-       color: $black;
+    h1 {
+        color: $med_gray;
     }
 
     img.img-thumbnail {
