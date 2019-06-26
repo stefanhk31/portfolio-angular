@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,10 +9,10 @@ import { PortfolioItemsComponent } from './portfolio/portfolio-items/portfolio-i
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
-    { path: 'about', component: AboutComponent },
-    { path: 'contact', component: ContactComponent },
-    { path: 'portfolio', component: PortfolioComponent },
-    { path: '', component: WelcomeComponent }
+    { path: 'about', component: AboutComponent, data: { animation: 'About' } },
+    { path: 'contact', component: ContactComponent, data: { animation: 'Contact' } },
+    { path: 'portfolio', component: PortfolioComponent, data: { animation: 'Portfolio' } },
+    { path: '', component: WelcomeComponent, data: { animation: 'Welcome' } }
 
 ];
 
@@ -27,7 +26,6 @@ const routes: Routes = [
     ],
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
         RouterModule.forRoot(routes)],
         exports: [RouterModule]
 })

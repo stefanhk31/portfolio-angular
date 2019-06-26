@@ -2,7 +2,8 @@
     background: $dark_teal;
     margin-bottom: -5px;
 
-    a {
+    a,
+    a:not([href]):not([tabindex]) {
         color: white;
 
         &:hover {
