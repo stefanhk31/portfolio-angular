@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      { path: 'portfolio/case-study/:itemID', component: CaseStudyComponent,  data: { animation: 'Case Study' } }
+      { path: 'portfolio/case-study/:itemID', component: CaseStudyComponent,  data: { animation: 'CaseStudy' } }
     ])
   ]
 })
