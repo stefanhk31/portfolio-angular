@@ -1,5 +1,14 @@
 .case-study {
+    .container {
+        height: 100%;
+        margin-bottom: 25px;
+    }
+    
     h4 {
         text-align: left;
+    }
+
+    p {
+        color: $black;
     }
 }
