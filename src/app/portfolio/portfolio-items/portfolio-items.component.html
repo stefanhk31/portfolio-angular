@@ -1,10 +1,11 @@
 <div class="portfolio-items" *ngIf="items && items.length">
   <div class="row no-gutters">
     <div class="col-12" *ngFor="let item of items">
-      <a [routerLink]="['/portfolio/case-study', item.itemID]" >
-        <h3>{{ item.itemName }}</h3>
-      </a>
-        <p>{{ item.itemTagline }}</p>
+      <div class="guiding-link d-flex flex-column">
+        <a [routerLink]="['/portfolio/case-study', item.itemID]" >
+          <p>{{ item.itemName }}: <em>{{ item.itemTagline }}</em></p>
+        </a>
+      </div>
     </div>
   </div>
 </div>

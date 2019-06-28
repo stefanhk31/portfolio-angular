@@ -1,0 +1,18 @@
+.portfolio-items {
+    .guiding-link {
+
+        a {
+            background: $med_teal;
+
+            &:hover {
+              * {
+                color: $med_gray;
+              }  
+            }
+
+            &:after {
+                color: $med_gray;
+            }
+        }
+    }
+}
