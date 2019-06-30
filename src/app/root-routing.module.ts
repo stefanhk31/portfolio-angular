@@ -26,7 +26,7 @@ const routes: Routes = [
     ],
     imports: [
         BrowserModule,
-        RouterModule.forRoot(routes)],
+        RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
         exports: [RouterModule]
 })
 export class RootRoutingModule {
