@@ -14,8 +14,18 @@
     }
 
 
-    &.about,&.portfolio,&.contact {
-        background: url('assets/img/background-placeholder.jpg');
+    &.about {
+        background: url('assets/img/about-background.jpg');
+        background-size: cover;
+    }
+
+    &.portfolio {
+        background: url('assets/img/portfolio-background.jpg');
+        background-size: cover;
+    }
+
+    &.contact {
+        background: url('assets/img/contact-background.jpg');
         background-size: cover;
     }
 
