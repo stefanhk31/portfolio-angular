@@ -7,5 +7,6 @@ export interface IPortfolioItem {
         tech: string,
         future: string
     },
-    itemImage: string
+    itemImageDesktop: string,
+    itemImageMobile: string 
 }

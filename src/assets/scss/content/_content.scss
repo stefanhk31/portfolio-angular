@@ -1,8 +1,3 @@
-@import 'components/welcome';
-@import 'components/about';
-@import 'components/contact';
-@import 'components/portfolio/portfolio';
-
 .content {
     padding-top: 20px;
     min-height: 750px;
@@ -19,13 +14,23 @@
     }
 
 
-    &.about,&.portfolio,&.contact {
-        background: url('assets/img/background-placeholder.jpg');
+    &.about {
+        background: url('assets/img/about-background.jpg');
+        background-size: cover;
+    }
+
+    &.portfolio {
+        background: url('assets/img/portfolio-background.jpg');
+        background-size: cover;
+    }
+
+    &.contact {
+        background: url('assets/img/contact-background.jpg');
         background-size: cover;
     }
 
     .guiding-link {
-        * {
+        a {
             position: relative;
             margin: 10px 0;
             padding: 15px 10px;
@@ -55,7 +60,7 @@
         }
 
         &.back-link {
-            * {
+            a {
                 transition: 0.5s;
                 color: $med_teal;
 
