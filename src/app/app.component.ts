@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { slideInAnimation } from './animations.module';
 
 
@@ -11,15 +11,9 @@ import { slideInAnimation } from './animations.module';
 })
 export class AppComponent {
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (!(event instanceof NavigationEnd)) {
-          return;
-      }
-      window.scrollTo(0, 0)
-  });
   }
 
   prepareRoute(outlet: RouterOutlet) {
