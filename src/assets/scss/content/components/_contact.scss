@@ -1,5 +1,10 @@
 .contact {
     a {
         padding: 25px 0;
+
+        &:hover {
+            color: $dark_gray;
+        }
+
     }
 }
