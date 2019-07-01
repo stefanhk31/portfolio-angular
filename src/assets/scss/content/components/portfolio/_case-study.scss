@@ -11,6 +11,24 @@
         color: $black;
     }
 
+    .source-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        
+        a {
+            font-weight: 400;
+            font-style: italic;
+
+            &:hover {
+                text-decoration: none;
+                color: $dark_gray;
+            }
+
+        }
+        
+    }
+
 
     .carousel-control-next, .carousel-control-prev {
         top: 75%;
