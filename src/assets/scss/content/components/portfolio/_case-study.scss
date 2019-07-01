@@ -15,12 +15,18 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 15px;
+        
+        a {
+            font-weight: 400;
+            font-style: italic;
 
-        a:hover {
-            text-decoration: none;
-            color: $dark_gray;
+            &:hover {
+                text-decoration: none;
+                color: $dark_gray;
+            }
+
         }
-
+        
     }
 
 
