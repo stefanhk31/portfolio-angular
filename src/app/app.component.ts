@@ -10,6 +10,7 @@ import { slideInAnimation } from './animations.module';
   animations: [ slideInAnimation ]
 })
 export class AppComponent {
+  title = 'portfolio-angular';
 
   constructor() { }
 

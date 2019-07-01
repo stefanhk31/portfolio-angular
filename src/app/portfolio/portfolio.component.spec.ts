@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PortfolioComponent } from './portfolio.component';
+import { PortfolioItemsComponent } from './portfolio-items/portfolio-items.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
+
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -8,7 +12,12 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PortfolioComponent ]
+      imports: [ RouterTestingModule,
+        HttpClientModule
+      ], 
+      declarations: [ PortfolioComponent,
+        PortfolioItemsComponent
+      ]
     })
     .compileComponents();
   }));
