@@ -1,0 +1,86 @@
+.content {
+    padding: 30px 0;
+    min-height: 750px;
+
+    .container {
+        @media(min-width: 768px) {
+            height: 100vh;
+        }
+    }
+
+
+    p {
+        color: white;
+    }
+
+
+    &.about {
+        background: url('assets/img/about-background.jpg');
+        background-size: cover;
+    }
+
+    &.portfolio {
+        background: url('assets/img/portfolio-background.jpg');
+        background-size: cover;
+    }
+
+    &.contact {
+        background: url('assets/img/contact-background.jpg');
+        background-size: cover;
+    }
+
+    .guiding-link {
+        a {
+            position: relative;
+            margin: 10px 0;
+            padding: 15px 10px;
+            border-radius: 3px;
+            background: $light_gray;
+            border: 1px solid $med_teal;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                color: $dark_teal;
+            }
+
+            &:after {
+                font-family: "Font Awesome 5 Free";
+                content: '\f054';
+                position: absolute;
+                opacity: 0;
+                top: 14px;
+                left: 90%;
+                transition: 0.5s;
+            }
+
+            &:hover:after {
+                opacity: 1;
+                right: 0;
+            }
+
+        }
+
+        &.back-link {
+            a {
+                transition: 0.5s;
+                color: $med_teal;
+
+                &:hover {
+                    padding-left: 50px;
+                    color: $dark_teal;
+                }
+
+                &:after {
+                    content: '\f053';
+                    font-family: 'Font Awesome 5 Free';
+                    color: $dark_teal;
+                    left: 20px;
+                }
+            }
+
+        }
+        
+    }
+
+}
