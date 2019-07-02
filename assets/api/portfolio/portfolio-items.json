@@ -1,0 +1,30 @@
+[
+    {
+      "itemID": "whereToDo",
+      "itemName": "WhereToDo",
+      "itemTagline": "A to-do list app that geolocates tasks.",
+      "itemDescription": {
+        "liveDemo": "https://wheretodolist.herokuapp.com/",
+        "srcCode": "https://github.com/stefanhk31/geo-todo-list/tree/prod",
+        "project": "WhereToDo is a location-based todo list. Users enter a task, location, and address, and a pin pops up on the map marking that particular task location. If there are multiple tasks in the same location, they will be combined into the same list. Users can then filter which lists appear on the map based on location name or distance from their current position.",
+        "tech": "The app is built with React, using create-react-app. The map and distance filter come from Mapbox, and geolocation relies on HERE. Using these services was a great opportunity for me to learn how to build API services into my apps.",
+        "future": "There are a few UI additions that would improve WhereToDo, including descriptive popups for the map pins, and a collapsible list panel for mobile. Functionally, I would like to add backend data storage, to allow users to store lists when they navigate away from the page. I’d also like to make WhereToDo into a Native app, in order to provide better mobile performance."
+      },
+      "itemImageDesktop": "assets/img/wheretodo_desktop.png",
+      "itemImageMobile": "assets/img/wheretodo_mobile.png"
+    },
+    {
+      "itemID": "sitStandTimer",
+      "itemName": "Sit/Stand Timer",
+      "itemTagline": "A timer app used to remind you to change position while working.",
+      "itemDescription": {
+        "liveDemo": "https://stefanhk31.github.io/sit-stand-timer/",
+        "srcCode": "https://github.com/stefanhk31/sit-stand-timer/tree/master",
+        "project": "At my computer, I often spend so much time in my own head that I completely lose track of my body, and end up hunching in front of the screen for hours. This timer app helps me remember to alternate between sitting and standing work throughout the day. Users set two timers: one for sitting work, and one for standing. Once the sitting timer is completed, an alert pops up, and then the standing timer begins. These two timers operate back and forth as long as the user wishes.",
+        "tech": "The app is built with React, using create-react-app. Minute.js prevents JavaScript’s setInterval() from bleeding time during the countdown. This was the first app I built using React, and it taught me how to compartmentalize a web project into different components, and to pass data between those components.",
+        "future": "I am interested in making this into a progressive web app that is accessible on mobile phones without internet connection. Additionally, I’d like to add backend data storage, so that users don’t have to re-set the timer each time they leave and return to the page."
+      },
+      "itemImageDesktop": "assets/img/sitstandtimer_desktop.png",
+      "itemImageMobile": "assets/img/sitstandtimer_mobile.png"
+    }
+  ]

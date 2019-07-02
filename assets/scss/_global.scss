@@ -1,0 +1,42 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    line-height: 2rem;
+    background: $white;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    text-transform: uppercase;
+    color: $med_teal;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a,
+.navbar a {
+    color: $med_teal;
+    text-decoration: none;
+    font-weight: 600;
+
+    :hover {
+        color: $dark_gray;
+    }
+
+}
+
+
