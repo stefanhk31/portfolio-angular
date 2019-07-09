@@ -1,5 +1,19 @@
 [
-    {
+  {
+    "itemID": "DashLandingPage",
+    "itemName": "DASH Landing Page",
+    "itemTagline": "A landing page advertising a nationally-funded research project.",
+    "itemDescription": {
+      "liveDemo": "http://dash.stanford.edu/",
+      "srcCode": "",
+      "project": "",
+      "tech": "",
+      "future": ""
+    },
+    "itemImageDesktop": "assets/img/dash_desktop.png",
+    "itemImageMobile": "assets/img/dash_mobile.png"
+  },
+  {
       "itemID": "whereToDo",
       "itemName": "WhereToDo",
       "itemTagline": "A to-do list app that geolocates tasks.",
