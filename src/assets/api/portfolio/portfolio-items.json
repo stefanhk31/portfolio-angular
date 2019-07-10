@@ -6,9 +6,9 @@
     "itemDescription": {
       "liveDemo": "http://dash.stanford.edu/",
       "srcCode": "",
-      "project": "",
-      "tech": "",
-      "future": ""
+      "project": "The Digital Analysis of Syriac Handwriting (DASH) project is an international research project based at Stanford University that applies modern computing to researching ancient and medieval documents. I designed the website for DASH, and took the lead on the site’s development. This website offers researchers, students, and funding sources an easy way to learn more about the project.",
+      "tech": "For the design, I constructed a mockup using Canva. For the development, I used  HTML, CSS, and Bootstrap 4 to create the basic website layout, based on the design as well as the client’s feedback on the design. I built the landing page, the top navigation bar, the footer, and the “Participants,” “Publications,” and “Results” pages. This project was an excellent opportunity for me to work extensively with Bootstrap 4 to build an appealing and effective website for a client.",
+      "future": "Building the DASH website taught me how to listen to a client’s needs, and build the best website possible, based on client feedback from mockups and webpages. For similar projects in the future, I would like to make greater use of web design tools like AdobeXD to offer sharper, more professional mockups. Additionally, I would like to work more extensively in taking the code from development to deployment."
     },
     "itemImageDesktop": "assets/img/dash_desktop.png",
     "itemImageMobile": "assets/img/dash_mobile.png"
