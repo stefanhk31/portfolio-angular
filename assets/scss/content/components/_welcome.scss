@@ -9,14 +9,15 @@
             padding-top: 0;
         }
 
-        .opening-text {
-            color: $black;
-         }
-
     }
 
     h1 {
-        color: $med_gray;
+        text-shadow: 2px 2px $dark_gray;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-shadow: 1px 1px $dark_gray;
     }
 
     img.img-thumbnail {
