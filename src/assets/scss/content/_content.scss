@@ -13,6 +13,12 @@
         color: white;
     }
 
+    &.about,&.portfolio,&.contact {
+        h2 {
+            text-shadow: 1px 1px $med_teal;
+        }
+    }
+
 
     &.about {
         background: url('assets/img/about-background.jpg');
