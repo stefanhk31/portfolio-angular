@@ -13,6 +13,12 @@
         color: white;
     }
 
+    &.about,&.portfolio,&.contact {
+        h2 {
+            text-shadow: 1px 1px $med_teal;
+        }
+    }
+
 
     &.about {
         background: url('assets/img/about-background.jpg');
@@ -27,6 +33,10 @@
     &.contact {
         background: url('assets/img/contact-background.jpg');
         background-size: cover;
+    }
+
+    &.case-study {
+        background: snow;
     }
 
     .guiding-link {
