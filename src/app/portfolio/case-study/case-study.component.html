@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row no-gutters">
       <div class="col-12">
-        <h2>{{ item.itemName }}</h2>
+        <h2 class="text-left text-sm-center">{{ item.itemName }}</h2>
         <h4>
           What I did:
         </h4>
         <p>
           {{item.itemDescription.project}}
         </p>
-        <div id="screenshotCarousel" class="carousel slide float-right w-50 mx-4" data-ride="carousel">
+        <div id="screenshotCarousel" class="carousel slide float-right mx-4" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="{{item.itemImageDesktop}}" alt="desktop view">

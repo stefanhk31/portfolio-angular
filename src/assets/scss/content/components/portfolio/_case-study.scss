@@ -39,6 +39,12 @@
 
     }
 
+    .carousel {
+        @media(min-width: 768px) {
+            width: 50%;
+        }
+    }
+
 
     .carousel-control-next,
     .carousel-control-prev {
