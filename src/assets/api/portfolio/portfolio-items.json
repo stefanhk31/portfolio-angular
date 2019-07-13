@@ -2,13 +2,14 @@
   {
     "itemID": "DashLandingPage",
     "itemName": "DASH Landing Page",
-    "itemTagline": "A landing page advertising a nationally-funded research project.",
+    "itemTagline": "An alpha version of a webpage for a nationally-funded research project.",
     "itemDescription": {
-      "liveDemo": "http://dash.stanford.edu/",
-      "srcCode": "",
-      "project": "The Digital Analysis of Syriac Handwriting (DASH) project is an international research project based at Stanford University that applies modern computing to researching ancient and medieval documents. I designed the website for DASH, and took the lead on the site’s development. This website offers researchers, students, and funding sources an easy way to learn more about the project.",
-      "tech": "For the design, I constructed a mockup using Canva. For the development, I used  HTML, CSS, and Bootstrap 4 to create the basic website layout, based on the design as well as the client’s feedback on the design. I built the landing page, the top navigation bar, the footer, and the “Participants,” “Publications,” and “Results” pages.",
-      "future": "Building the DASH website taught me how to listen to a client’s needs, and build the best website possible, based on client feedback from mockups and webpages. For similar projects in the future, I would like to make greater use of web design tools like AdobeXD to offer sharper, more professional mockups."
+      "alphaDemo": "https://github.com/stefanhk31/dash-stanford",
+      "finalVersion": "http://dash.stanford.edu/",
+      "srcCode": "https://github.com/stefanhk31/dash-stanford",
+      "project": "The Digital Analysis of Syriac Handwriting (DASH) project is an international research project based at Stanford University that applies modern computing to researching ancient and medieval documents. I designed the website for DASH, and developed a static alpha version which contained HTML and CSS for the homepage and the “About,” “Contact,” “Participants,” “Publications,” and “Results” pages. The Stanford development team then used my static code as a starting point to develop and deploy the final version of the website.",
+      "tech": "For the design, I constructed a mockup using Canva. For the development, I used HTML and CSS to create static pages, based on my initial design and client feedback. I also created a responsive navigation bar using JavaScript. I developed these pages without any additional frameworks, because I wanted to build my knowledge of HTML and CSS fundamentals.",
+      "future": ""
     },
     "itemImageDesktop": "assets/img/dash_desktop.png",
     "itemImageMobile": "assets/img/dash_mobile.png"
@@ -18,7 +19,8 @@
       "itemName": "WhereToDo",
       "itemTagline": "A to-do list app that geolocates tasks.",
       "itemDescription": {
-        "liveDemo": "https://wheretodolist.herokuapp.com/",
+        "alphaDemo": "https://wheretodolist.herokuapp.com/",
+        "finalVersion": "",
         "srcCode": "https://github.com/stefanhk31/geo-todo-list/tree/prod",
         "project": "WhereToDo is a location-based todo list. Users enter a task, location, and address, and a pin pops up on the map marking that particular task location. If there are multiple tasks in the same location, they will be combined into the same list. Users can then filter which lists appear on the map based on location name or distance from their current position.",
         "tech": "The app is built with React, using create-react-app. The map and distance filter come from Mapbox, and geolocation relies on HERE. Using these services was a great opportunity for me to learn how to build API services into my apps.",
@@ -32,7 +34,8 @@
       "itemName": "Sit/Stand Timer",
       "itemTagline": "A timer app used to remind you to change position while working.",
       "itemDescription": {
-        "liveDemo": "https://stefanhk31.github.io/sit-stand-timer/",
+        "alphaDemo": "https://stefanhk31.github.io/sit-stand-timer/",
+        "finalVersion": "",
         "srcCode": "https://github.com/stefanhk31/sit-stand-timer/tree/master",
         "project": "At my computer, I often spend so much time in my own head that I completely lose track of my body, and end up hunching in front of the screen for hours. This timer app helps me remember to alternate between sitting and standing work throughout the day. Users set two timers: one for sitting work, and one for standing. Once the sitting timer is completed, an alert pops up, and then the standing timer begins. These two timers operate back and forth as long as the user wishes.",
         "tech": "The app is built with React, using create-react-app. Minute.js prevents JavaScript’s setInterval() from bleeding time during the countdown. This was the first app I built using React, and it taught me how to compartmentalize a web project into different components, and to pass data between those components.",
