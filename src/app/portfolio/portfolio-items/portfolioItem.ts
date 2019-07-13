@@ -3,7 +3,8 @@ export interface IPortfolioItem {
     itemName: string,
     itemTagline: string,
     itemDescription: {
-        liveDemo: string,
+        alphaDemo: string,
+        finalVersion: string,
         srcCode: string,
         project: string,
         tech: string,
