@@ -4,7 +4,7 @@
     "itemName": "DASH Landing Page",
     "itemTagline": "An alpha version of a webpage for a nationally-funded research project.",
     "itemDescription": {
-      "alphaDemo": "https://github.com/stefanhk31/dash-stanford",
+      "alphaDemo": "https://stefanhk31.github.io/dash-stanford/",
       "finalVersion": "http://dash.stanford.edu/",
       "srcCode": "https://github.com/stefanhk31/dash-stanford",
       "project": "The Digital Analysis of Syriac Handwriting (DASH) project is an international research project based at Stanford University that applies modern computing to researching ancient and medieval documents. I designed the website for DASH, and developed a static alpha version which contained HTML and CSS for the homepage and the “About,” “Contact,” “Participants,” “Publications,” and “Results” pages. The Stanford development team then used my static code as a starting point to develop and deploy the final version of the website.",
