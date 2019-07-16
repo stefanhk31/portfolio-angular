@@ -8,7 +8,8 @@ export interface IPortfolioItem {
         srcCode: string,
         project: string,
         tech: string,
-        future: string
+        future: string,
+        feedback: string
     },
     itemImageDesktop: string,
     itemImageMobile: string 

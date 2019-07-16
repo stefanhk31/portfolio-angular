@@ -38,6 +38,14 @@
             {{item.itemDescription.tech}}
           </p>
         </div>
+        <div class="feedback-wrapper" *ngIf="item.itemDescription.feedback">
+          <h4>
+            Feedback:
+          </h4>
+          <p>
+            {{ item.itemDescription.feedback}}
+          </p>
+        </div>
         <div class="future-wrapper" *ngIf="item.itemDescription.future">
           <h4>
             Future directions:
