@@ -1,0 +1,18 @@
+.about {
+    h6 {
+        font-weight: bold;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+
+    .progress {
+        border: 1px solid $dark_gray;
+        height: auto;
+
+        .progress-bar {
+            background-color: $dark_teal;
+        }
+    }
+}
