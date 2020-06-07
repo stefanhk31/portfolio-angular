@@ -7,12 +7,33 @@
         font-size: 18px;
     }
 
+    .skill-bar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
     .progress {
         border: 1px solid $dark_gray;
-        height: auto;
+        background-color: $light_gray;
+        height: 3rem;
 
         .progress-bar {
+            font-size: 1rem;
             background-color: $dark_teal;
+        }
+    }
+
+    .guiding-link {
+        a {
+            margin-bottom: 0;
         }
     }
 }
