@@ -1,19 +1,31 @@
 [
   {
-    "itemID": "DashLandingPage",
-    "itemName": "DASH Landing Page",
-    "itemTagline": "An alpha version of a webpage for a nationally-funded research project.",
-    "itemDescription": {
-      "alphaDemo": "https://stefanhk31.github.io/dash-stanford/",
-      "finalVersion": "http://dash.stanford.edu/",
-      "srcCode": "https://github.com/stefanhk31/dash-stanford",
-      "project": "The Digital Analysis of Syriac Handwriting (DASH) project is an international research project based at Stanford University that applies modern computing to researching ancient and medieval documents. I designed the website for DASH, and developed a static alpha version which contained HTML and CSS for the homepage and the “About,” “Contact,” “Participants,” “Publications,” and “Results” pages. The Stanford development team then used my static code as a starting point to develop and deploy the final version of the website.",
-      "tech": "For the design, I constructed a mockup using Canva. For the development, I used HTML and CSS to create static pages, based on my initial design and client feedback. I also created a responsive navigation bar using JavaScript. I developed these pages without any additional frameworks, because I wanted to build my knowledge of HTML and CSS fundamentals.",
+    "itemID": "dashLandingPage",
+    "itemDescription": "DASH Landing Page",
+    "itemTagline": "The alpha version of a webpage for a nationally-funded research project.",
+    "itemDetail": {
+      "tech": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Github Pages"
+      ],
+      "accomplishments": [
+        "Designed and devleoped mobile-friendly landing page",
+        "Delivered site according to client specifications and timeline"
+      ],
       "feedback": "\"Stefan swooped in to help my multi-year digital paleography project at a most critical junction. From scratch he designed our project’s initial website. Stefan is a great communicator and his extensive background in academe meant he was able to assess our needs, to incorporate our feedback as the designs developed, and to put together the website we needed. Months later our project grew and our team expanded to include a full-time group of developers from the Stanford Libraries. Stefan’s initial website served as a wonderful starting point for their development of the final static webpages. The combination of Stefan’s technical and interpersonal skills makes him a great addition to any project team.\" -Michael Penn, Stanford University",
-      "future": ""
+      "links": {
+        "demo": "https://stefanhk31.github.io/dash-stanford/",
+        "final": "http://dash.stanford.edu/",
+        "source": "https://github.com/stefanhk31/dash-stanford"
+      }
     },
-    "itemImageDesktop": "assets/img/dash_desktop.png",
-    "itemImageMobile": "assets/img/dash_mobile.png"
+    "itemPreviewImage": "assets/img/dash_preview.png",
+    "itemCarouselImages": [
+      "assets/img/dash_laptop.png",
+      "assets/img/dash_mobile.png"
+    ]
   },
   {
       "itemID": "whereToDo",
