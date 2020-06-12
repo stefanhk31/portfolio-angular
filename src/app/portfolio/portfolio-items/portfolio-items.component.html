@@ -2,8 +2,8 @@
   <div class="row no-gutters">
     <div class="col-12" *ngFor="let item of items">
       <div class="guiding-link d-flex flex-column">
-        <a [routerLink]="['/portfolio/case-study', item.itemID]" >
-          <p>{{ item.itemName }}: <em>{{ item.itemTagline }}</em></p>
+        <a [routerLink]="['/portfolio/case-study', item.id]" >
+          <p>{{ item.name }}: <em>{{ item.tagline }}</em></p>
         </a>
       </div>
     </div>
