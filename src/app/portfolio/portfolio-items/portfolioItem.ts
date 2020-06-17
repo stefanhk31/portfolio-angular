@@ -1,7 +1,7 @@
 export interface IPortfolioItem {
     id: string;
     name: string;
-    tagline: string;
+    tagline: string;s
     previewImageUrl: string;
     detail: IItemDetail;
 }

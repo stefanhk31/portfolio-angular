@@ -1,8 +1,11 @@
 .portfolio-items {
-    .guiding-link {
+    .card-body {
+      background: $med_teal;
+      padding: 0;
+      
         a {
             background: $med_teal;
-            border-color: $med_gray;
+            border: none;
 
             &:hover {
               * {

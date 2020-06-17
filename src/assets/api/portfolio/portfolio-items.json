@@ -2,7 +2,7 @@
   {
     "id": "dashLandingPage",
     "name": "DASH Landing Page",
-    "tagline": "The alpha version of a webpage for a nationally-funded research project.",
+    "tagline": "The alpha version of a nationally-funded research project webpage.",
     "previewImageUrl": "assets/img/dash_preview.png",
     "detail": {
       "tech": [
