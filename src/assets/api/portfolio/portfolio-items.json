@@ -31,7 +31,7 @@
     "id": "whereToDo",
     "name": "WhereToDo",
     "tagline": "User interface for a to-do list app that geolocates tasks.",
-    "previewImageUrl": "",
+    "previewImageUrl": "assets/img/wheretodo_preview.png",
     "detail": {
       "tech": [
         "React",
@@ -59,7 +59,7 @@
     "id": "sitStandTimer",
     "name": "Sit/Stand Timer",
     "tagline": "A timer reminding you to shift positions while working.",
-    "previewImageUrl": "",
+    "previewImageUrl": "assets/img/sitstandtimer_preview.png",
     "detail": {
       "tech": [
         "React",
@@ -73,12 +73,12 @@
       ],
       "feedback": "",
       "links": {
-        "demo": "https://wheretodolist.herokuapp.com/",
+        "demo": "https://stefanhk31.github.io/sit-stand-timer/",
         "source": "https://github.com/stefanhk31/sit-stand-timer/tree/master"
       },
       "carouselImageUrls": [
-        "assets/img/wheretodo_desktop.png",
-        "assets/img/wheretodo_mobile.png"
+        "assets/img/sitstandtimer_desktop.png",
+        "assets/img/sitstandtimer_mobile.png"
       ]
     }
   }
