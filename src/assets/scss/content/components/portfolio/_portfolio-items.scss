@@ -1,21 +1,39 @@
 .portfolio-items {
-    .card-body {
+  .guiding-link {    
+    a {
       background: $med_teal;
+      border: none;
       padding: 0;
-      
-        a {
-            background: $med_teal;
-            border: none;
+      margin: 0;
 
-            &:hover {
-              * {
-                color: $med_gray;
-              }  
-            }
-
-            &:after {
-                color: $med_gray;
-            }
+      &:hover {
+        * {
+          color: $med_gray;
         }
+
+        .card-img-top {
+          opacity: 0.5;
+        }
+      }
+
+      &:after {
+        color: $med_gray;
+        bottom: 37px; 
+        top: auto;
+
+        @media (min-width: 992px) {
+          bottom: 50px;
+        }
+      }
+
+      .card-body {
+        background: $med_teal;
+
+        p {
+          margin-right: 20px;
+        }
+      }
+
     }
+  }
 }

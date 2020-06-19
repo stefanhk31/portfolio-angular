@@ -2,7 +2,7 @@
   {
     "id": "dashLandingPage",
     "name": "DASH Landing Page",
-    "tagline": "The alpha version of a nationally-funded research project webpage.",
+    "tagline": "Design and initial layout of a webpage.",
     "previewImageUrl": "assets/img/dash_preview.png",
     "detail": {
       "tech": [
@@ -30,7 +30,7 @@
   {
     "id": "whereToDo",
     "name": "WhereToDo",
-    "tagline": "User interface for a to-do list app that geolocates tasks.",
+    "tagline": "A to-do list app that geolocates tasks.",
     "previewImageUrl": "assets/img/wheretodo_preview.png",
     "detail": {
       "tech": [
@@ -58,7 +58,7 @@
   {
     "id": "sitStandTimer",
     "name": "Sit/Stand Timer",
-    "tagline": "A timer reminding you to shift positions while working.",
+    "tagline": "A timer for switching work positions.",
     "previewImageUrl": "assets/img/sitstandtimer_preview.png",
     "detail": {
       "tech": [

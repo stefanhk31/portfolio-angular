@@ -1,12 +1,14 @@
 <div class="row portfolio-items" *ngIf="items && items.length"> 
-    <div class="col-12 col-md-4" *ngFor="let item of items">
-      <div class="card">
-        <img class="card-img-top" src="{{item.previewImageUrl}}" alt="Preview Image">
-        <div class="card-body guiding-link d-flex flex-column">
-          <a [routerLink]="['/portfolio/case-study', item.id]" >
-            <p>{{ item.name }}: <em>{{ item.tagline }}</em></p>
+    <div class="col-12 col-md-4 my-3 my-md-0" *ngFor="let item of items">
+      <div class="guiding-link d-flex flex-column">
+        <a [routerLink]="['/portfolio/case-study', item.id]">
+          <div class="card">
+            <img class="card-img-top" src="{{item.previewImageUrl}}" alt="Preview Image">
+            <div class="card-body">
+                <p>{{ item.name }}: <em>{{ item.tagline }}</em></p>
+            </div>
+          </div>
           </a>
-        </div>
       </div>
     </div>
 </div>
