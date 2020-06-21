@@ -20,20 +20,21 @@
         color: $med_gray;
         bottom: 37px; 
         top: auto;
-
-        @media (min-width: 992px) {
-          bottom: 50px;
-        }
       }
 
-      .card-body {
+      .card {
         background: $med_teal;
 
-        p {
-          margin-right: 20px;
+        .card-header {
+          padding: .5rem .25rem;
+        }
+  
+        .card-body {
+          p {
+            margin-right: 20px;
+          }
         }
       }
-
     }
   }
 }

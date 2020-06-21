@@ -3,9 +3,12 @@
       <div class="guiding-link d-flex flex-column">
         <a [routerLink]="['/portfolio/case-study', item.id]">
           <div class="card">
+            <div class="card-header">
+              <h4>{{ item.name }}</h4>
+            </div>
             <img class="card-img-top" src="{{item.previewImageUrl}}" alt="Preview Image">
             <div class="card-body">
-                <p>{{ item.name }}: <em>{{ item.tagline }}</em></p>
+                <p>{{ item.tagline }}</p>
             </div>
           </div>
           </a>
