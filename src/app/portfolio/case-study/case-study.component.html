@@ -1,9 +1,40 @@
 <div class="content case-study" *ngIf="item">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-12">
-        <h2 class="text-left text-sm-center">{{ item.name }}</h2>
-        <div id="screenshotCarousel" class="carousel slide float-right mx-4" data-ride="carousel">
+      <div class="col-12 col-md-6">
+        <h2>{{ item.name }}</h2>
+
+        <h6>Accomplishments</h6>
+        <ul class="list-unstyled">
+          <li *ngFor="let acc of item.detail.accomplishments">{{acc}}</li>
+        </ul>
+
+        <h6>Tech</h6>
+        <ul class="list-inline">
+          <li class="list-inline-item" *ngFor="let tech of item.detail.tech">{{tech}}</li>
+        </ul>
+
+        <h6>Links</h6>
+        <ul class="list-inline">
+          <li class="list-inline-item" *ngFor="let link of item.detail.links | keyvalue">
+            <a href="{{link.value}}" target="_blank">{{link.key | titlecase}}</a>
+          </li>
+        </ul>
+
+        <div *ngIf="item.detail.feedback">
+          <h6>Feedback</h6>
+          <p>{{item.detail.feedback}}</p>
+        </div>
+
+        <div class="guiding-link back-link d-flex flex-column">
+          <a (click)='onBack()'>
+            Back to Portfolio
+          </a>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6">
+        <div id="screenshotCarousel" class="carousel slide mx-4" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="{{item.detail.carouselImageUrls[0]}}" alt="carousel image">
@@ -22,16 +53,6 @@
           </a>
         </div>
       </div>
-      <div class="source-links" *ngFor="let link of item.detail.links | keyvalue">
-          <a href="{{link.value}}" target="_blank">{{link.key}}</a>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="guiding-link back-link d-flex flex-column">
-          <a (click)='onBack()'>
-            Back to Portfolio
-          </a>
-        </div>
-      </div>
     </div>
   </div>
+</div>
