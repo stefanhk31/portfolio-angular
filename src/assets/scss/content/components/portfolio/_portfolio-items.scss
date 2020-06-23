@@ -17,9 +17,7 @@
       }
 
       &:after {
-        color: $med_gray;
-        bottom: 37px; 
-        top: auto;
+        display: none;
       }
 
       .card {
