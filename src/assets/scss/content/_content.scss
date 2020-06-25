@@ -36,7 +36,7 @@
     }
 
     &.case-study {
-        background: snow;
+        background: $light_gray;
     }
 
     .guiding-link {
@@ -45,13 +45,14 @@
             margin: 10px 0;
             padding: 15px 10px;
             border-radius: 3px;
-            background: $light_gray;
+            background: $med_teal;
             border: 1px solid $med_teal;
+            color: $light_gray;
             text-decoration: none;
             cursor: pointer;
 
             &:hover {
-                color: $dark_teal;
+                color: $med_gray;
             }
 
             &:after {
@@ -74,17 +75,17 @@
         &.back-link {
             a {
                 transition: 0.5s;
-                color: $med_teal;
+                color: $light_gray;
 
                 &:hover {
                     padding-left: 50px;
-                    color: $dark_teal;
+                    color: $med_gray;
                 }
 
                 &:after {
                     content: '\f053';
                     font-family: 'Font Awesome 5 Free';
-                    color: $dark_teal;
+                    color: $med_gray;
                     left: 20px;
                 }
             }
