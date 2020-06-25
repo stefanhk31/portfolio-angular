@@ -1,33 +1,5 @@
 [
   {
-    "id": "dashLandingPage",
-    "name": "D.A.S.H.",
-    "tagline": "Design and initial layout of a webpage.",
-    "previewImageUrl": "assets/img/dash_preview.png",
-    "detail": {
-      "tech": [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Github Pages"
-      ],
-      "accomplishments": [
-        "Designed and devleoped mobile-friendly landing page",
-        "Delivered site according to client specifications and timeline"
-      ],
-      "feedback": "\"Stefan swooped in to help my multi-year digital paleography project at a most critical junction. From scratch he designed our project’s initial website. Stefan is a great communicator and his extensive background in academe meant he was able to assess our needs, to incorporate our feedback as the designs developed, and to put together the website we needed. Months later our project grew and our team expanded to include a full-time group of developers from the Stanford Libraries. Stefan’s initial website served as a wonderful starting point for their development of the final static webpages. The combination of Stefan’s technical and interpersonal skills makes him a great addition to any project team.\" -Michael Penn, Stanford University",
-      "links": {
-        "demo": "https://stefanhk31.github.io/dash-stanford/",
-        "live site": "http://dash.stanford.edu/",
-        "source": "https://github.com/stefanhk31/dash-stanford"
-      },
-      "carouselImageUrls": [
-        "assets/img/dash_laptop.png",
-        "assets/img/dash_mobile.png"
-      ]
-    }
-  },
-  {
     "id": "whereToDo",
     "name": "WhereToDo",
     "tagline": "A to-do list app that geolocates tasks.",
@@ -68,7 +40,7 @@
         "Github Pages"
       ],
       "accomplishments": [
-        "Constructed timer to switch between sit and stand modes indefinitely",
+        "Built timer to switch between sit and stand modes indefinitely",
         "Prevented time from bleeding by implementing Moment.js"
       ],
       "feedback": "",
@@ -79,6 +51,34 @@
       "carouselImageUrls": [
         "assets/img/sitstandtimer_desktop.png",
         "assets/img/sitstandtimer_mobile.png"
+      ]
+    }
+  },
+  {
+    "id": "dashLandingPage",
+    "name": "D.A.S.H.",
+    "tagline": "Design and initial layout of a webpage.",
+    "previewImageUrl": "assets/img/dash_preview.png",
+    "detail": {
+      "tech": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Github Pages"
+      ],
+      "accomplishments": [
+        "Designed and devleoped mobile-friendly landing page",
+        "Delivered site according to client specifications and timeline"
+      ],
+      "feedback": "\"Stefan swooped in to help my multi-year digital paleography project at a most critical junction. From scratch he designed our project’s initial website. Stefan is a great communicator and his extensive background in academe meant he was able to assess our needs, to incorporate our feedback as the designs developed, and to put together the website we needed. Months later our project grew and our team expanded to include a full-time group of developers from the Stanford Libraries. Stefan’s initial website served as a wonderful starting point for their development of the final static webpages. The combination of Stefan’s technical and interpersonal skills makes him a great addition to any project team.\" -Michael Penn, Stanford University",
+      "links": {
+        "demo": "https://stefanhk31.github.io/dash-stanford/",
+        "live site": "http://dash.stanford.edu/",
+        "source": "https://github.com/stefanhk31/dash-stanford"
+      },
+      "carouselImageUrls": [
+        "assets/img/dash_laptop.png",
+        "assets/img/dash_mobile.png"
       ]
     }
   }

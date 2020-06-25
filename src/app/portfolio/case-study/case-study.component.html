@@ -10,21 +10,16 @@
         </ul>
 
         <h6>Tech</h6>
-        <ul class="list-inline">
+        <ul class="tech list-inline">
           <li class="list-inline-item" *ngFor="let tech of item.detail.tech">{{tech}}</li>
         </ul>
 
         <h6>Links</h6>
-        <ul class="list-inline">
+        <ul class="links list-inline">
           <li class="list-inline-item" *ngFor="let link of item.detail.links | keyvalue">
             <a href="{{link.value}}" target="_blank">{{link.key | titlecase}}</a>
           </li>
         </ul>
-
-        <div *ngIf="item.detail.feedback">
-          <h6>Feedback</h6>
-          <p>{{item.detail.feedback}}</p>
-        </div>
 
         <div class="guiding-link back-link d-flex flex-column">
           <a (click)='onBack()'>
