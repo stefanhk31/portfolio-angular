@@ -13,6 +13,10 @@
 
         .card-img-top {
           opacity: 0.5;
+
+          @media (min-width: 992px) {
+            max-height: 200px;
+          }
         }
       }
 
@@ -23,15 +27,18 @@
       .card {
         background: $med_teal;
 
+        .card-img-top {
+          max-height: 315px;
+
+          @media(min-width: 992px) {
+            max-height: 225px;
+          }
+        }
+
         .card-header {
           padding: .5rem .25rem;
         }
   
-        .card-body {
-          p {
-            margin-right: 20px;
-          }
-        }
       }
     }
   }

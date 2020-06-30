@@ -1,5 +1,32 @@
 [
   {
+    "id": "exposureLog",
+    "name": "ExposureLog",
+    "tagline": "An app to track potential exposure to infectious diseases.",
+    "previewImageUrl": "assets/img/exposurelog_preview.png",
+    "detail": {
+      "tech": [
+        "Xamarin",
+        "Google Maps API",
+        "Azure Functions",
+        "OAuth 2.0"
+      ],
+      "accomplishments": [
+        "Scaffolded application based on best practices Model-View-Viewmodel (MVVM) Architecture",
+        "Constructed Azure Functions app to send and receive data",
+        "Implemented ability to login with Facebook using OAuth"
+      ],
+      "feedback": "",
+      "links": {
+        "source": "https://github.com/stefanhk31/ExposureLog"
+      },
+      "carouselImageUrls": [
+        "assets/img/exposurelog_android.png",
+        "assets/img/exposurelog_ios.png"
+      ]
+    }
+  },
+  {
     "id": "whereToDo",
     "name": "WhereToDo",
     "tagline": "A to-do list app that geolocates tasks.",
