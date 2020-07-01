@@ -6,8 +6,7 @@ import { PortfolioService } from '../portfolio-items/portfolio.service';
 
 @Component({
   selector: 'app-case-study',
-  templateUrl: './case-study.component.html',
-  styleUrls: ['./case-study.component.scss']
+  templateUrl: './case-study.component.html'
 })
 export class CaseStudyComponent implements OnInit {
 
