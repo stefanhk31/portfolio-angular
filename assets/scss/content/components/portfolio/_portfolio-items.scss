@@ -1,18 +1,45 @@
 .portfolio-items {
-    .guiding-link {
-        a {
-            background: $med_teal;
-            border-color: $med_gray;
+  .guiding-link {    
+    a {
+      background: $med_teal;
+      border: none;
+      padding: 0;
+      margin: 0;
 
-            &:hover {
-              * {
-                color: $med_gray;
-              }  
-            }
-
-            &:after {
-                color: $med_gray;
-            }
+      &:hover {
+        * {
+          color: $med_gray;
         }
+
+        .card-img-top {
+          opacity: 0.5;
+
+          @media (min-width: 992px) {
+            max-height: 200px;
+          }
+        }
+      }
+
+      &:after {
+        display: none;
+      }
+
+      .card {
+        background: $med_teal;
+
+        .card-img-top {
+          max-height: 315px;
+
+          @media(min-width: 992px) {
+            max-height: 225px;
+          }
+        }
+
+        .card-header {
+          padding: .5rem .25rem;
+        }
+  
+      }
     }
+  }
 }
