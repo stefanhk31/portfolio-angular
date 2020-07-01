@@ -1,48 +1,112 @@
 [
   {
-    "itemID": "DashLandingPage",
-    "itemName": "DASH Landing Page",
-    "itemTagline": "An alpha version of a webpage for a nationally-funded research project.",
-    "itemDescription": {
-      "alphaDemo": "https://stefanhk31.github.io/dash-stanford/",
-      "finalVersion": "http://dash.stanford.edu/",
-      "srcCode": "https://github.com/stefanhk31/dash-stanford",
-      "project": "The Digital Analysis of Syriac Handwriting (DASH) project is an international research project based at Stanford University that applies modern computing to researching ancient and medieval documents. I designed the website for DASH, and developed a static alpha version which contained HTML and CSS for the homepage and the “About,” “Contact,” “Participants,” “Publications,” and “Results” pages. The Stanford development team then used my static code as a starting point to develop and deploy the final version of the website.",
-      "tech": "For the design, I constructed a mockup using Canva. For the development, I used HTML and CSS to create static pages, based on my initial design and client feedback. I also created a responsive navigation bar using JavaScript. I developed these pages without any additional frameworks, because I wanted to build my knowledge of HTML and CSS fundamentals.",
-      "feedback": "\"Stefan swooped in to help my multi-year digital paleography project at a most critical junction. From scratch he designed our project’s initial website. Stefan is a great communicator and his extensive background in academe meant he was able to assess our needs, to incorporate our feedback as the designs developed, and to put together the website we needed. Months later our project grew and our team expanded to include a full-time group of developers from the Stanford Libraries. Stefan’s initial website served as a wonderful starting point for their development of the final static webpages. The combination of Stefan’s technical and interpersonal skills makes him a great addition to any project team.\" -Michael Penn, Stanford University",
-      "future": ""
-    },
-    "itemImageDesktop": "assets/img/dash_desktop.png",
-    "itemImageMobile": "assets/img/dash_mobile.png"
+    "id": "exposureLog",
+    "name": "ExposureLog",
+    "tagline": "An app to track potential exposure to infectious diseases.",
+    "previewImageUrl": "assets/img/exposurelog_preview.png",
+    "detail": {
+      "tech": [
+        "Xamarin",
+        "Google Maps API",
+        "Azure Functions",
+        "OAuth 2.0"
+      ],
+      "accomplishments": [
+        "Scaffolded application based on best practices Model-View-Viewmodel (MVVM) Architecture",
+        "Constructed Azure Functions app to send and receive data",
+        "Implemented ability to login with Facebook using OAuth"
+      ],
+      "feedback": "",
+      "links": {
+        "source": "https://github.com/stefanhk31/ExposureLog"
+      },
+      "carouselImageUrls": [
+        "assets/img/exposurelog_android.png",
+        "assets/img/exposurelog_ios.png"
+      ]
+    }
   },
   {
-      "itemID": "whereToDo",
-      "itemName": "WhereToDo",
-      "itemTagline": "A to-do list app that geolocates tasks.",
-      "itemDescription": {
-        "alphaDemo": "https://wheretodolist.herokuapp.com/",
-        "finalVersion": "",
-        "srcCode": "https://github.com/stefanhk31/geo-todo-list/tree/prod",
-        "project": "WhereToDo is a location-based todo list. Users enter a task, location, and address, and a pin pops up on the map marking that particular task location. If there are multiple tasks in the same location, they will be combined into the same list. Users can then filter which lists appear on the map based on location name or distance from their current position.",
-        "tech": "The app is built with React, using create-react-app. The map and distance filter come from Mapbox, and geolocation relies on HERE. Using these services was a great opportunity for me to learn how to build API services into my apps.",
-        "future": "There are a few UI additions that would improve WhereToDo, including descriptive popups for the map pins, and a collapsible list panel for mobile. Functionally, I would like to add backend data storage, to allow users to store lists when they navigate away from the page. I’d also like to make WhereToDo into a Native app, in order to provide better mobile performance."
+    "id": "whereToDo",
+    "name": "WhereToDo",
+    "tagline": "A to-do list app that geolocates tasks.",
+    "previewImageUrl": "assets/img/wheretodo_preview.png",
+    "detail": {
+      "tech": [
+        "React",
+        "Mapbox.js",
+        "Bootstrap",
+        "HERE",
+        "Heroku"
+      ],
+      "accomplishments": [
+        "Constructed React components of list and map",
+        "Built services to integrate with mapping APIs"
+      ],
+      "feedback": "",
+      "links": {
+        "demo": "https://wheretodolist.herokuapp.com/",
+        "source": "https://github.com/stefanhk31/geo-todo-list/tree/prod"
       },
-      "itemImageDesktop": "assets/img/wheretodo_desktop.png",
-      "itemImageMobile": "assets/img/wheretodo_mobile.png"
-    },
-    {
-      "itemID": "sitStandTimer",
-      "itemName": "Sit/Stand Timer",
-      "itemTagline": "A timer app used to remind you to change position while working.",
-      "itemDescription": {
-        "alphaDemo": "https://stefanhk31.github.io/sit-stand-timer/",
-        "finalVersion": "",
-        "srcCode": "https://github.com/stefanhk31/sit-stand-timer/tree/master",
-        "project": "At my computer, I often spend so much time in my own head that I completely lose track of my body, and end up hunching in front of the screen for hours. This timer app helps me remember to alternate between sitting and standing work throughout the day. Users set two timers: one for sitting work, and one for standing. Once the sitting timer is completed, an alert pops up, and then the standing timer begins. These two timers operate back and forth as long as the user wishes.",
-        "tech": "The app is built with React, using create-react-app. Minute.js prevents JavaScript’s setInterval() from bleeding time during the countdown. This was the first app I built using React, and it taught me how to compartmentalize a web project into different components, and to pass data between those components.",
-        "future": "I am interested in making this into a progressive web app that is accessible on mobile phones without internet connection. Additionally, I’d like to add backend data storage, so that users don’t have to re-set the timer each time they leave and return to the page."
-      },
-      "itemImageDesktop": "assets/img/sitstandtimer_desktop.png",
-      "itemImageMobile": "assets/img/sitstandtimer_mobile.png"
+      "carouselImageUrls": [
+        "assets/img/wheretodo_desktop.png",
+        "assets/img/wheretodo_mobile.png"
+      ]
     }
-  ]
+  },
+  {
+    "id": "sitStandTimer",
+    "name": "Sit/Stand Timer",
+    "tagline": "A timer for switching between sitting and standing while working.",
+    "previewImageUrl": "assets/img/sitstandtimer_preview.png",
+    "detail": {
+      "tech": [
+        "React",
+        "Moment.js",
+        "Bootstrap",
+        "Github Pages"
+      ],
+      "accomplishments": [
+        "Built timer to switch between sit and stand modes indefinitely",
+        "Prevented time from bleeding by implementing Moment.js"
+      ],
+      "feedback": "",
+      "links": {
+        "live app": "https://stefanhk31.github.io/sit-stand-timer/",
+        "source": "https://github.com/stefanhk31/sit-stand-timer/tree/master"
+      },
+      "carouselImageUrls": [
+        "assets/img/sitstandtimer_desktop.png",
+        "assets/img/sitstandtimer_mobile.png"
+      ]
+    }
+  },
+  {
+    "id": "dashLandingPage",
+    "name": "D.A.S.H.",
+    "tagline": "Alpha code for the webpage of a nationally-funded research project.",
+    "previewImageUrl": "assets/img/dash_preview.png",
+    "detail": {
+      "tech": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Github Pages"
+      ],
+      "accomplishments": [
+        "Designed and devleoped mobile-friendly landing page",
+        "Delivered site according to client specifications and timeline"
+      ],
+      "feedback": "\"Stefan swooped in to help my multi-year digital paleography project at a most critical junction. From scratch he designed our project’s initial website. Stefan is a great communicator and his extensive background in academe meant he was able to assess our needs, to incorporate our feedback as the designs developed, and to put together the website we needed. Months later our project grew and our team expanded to include a full-time group of developers from the Stanford Libraries. Stefan’s initial website served as a wonderful starting point for their development of the final static webpages. The combination of Stefan’s technical and interpersonal skills makes him a great addition to any project team.\" -Michael Penn, Stanford University",
+      "links": {
+        "demo": "https://stefanhk31.github.io/dash-stanford/",
+        "live site": "http://dash.stanford.edu/",
+        "source": "https://github.com/stefanhk31/dash-stanford"
+      },
+      "carouselImageUrls": [
+        "assets/img/dash_laptop.png",
+        "assets/img/dash_mobile.png"
+      ]
+    }
+  }
+]

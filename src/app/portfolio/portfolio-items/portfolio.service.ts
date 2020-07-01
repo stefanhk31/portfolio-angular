@@ -19,7 +19,7 @@ export class PortfolioService {
 
     getItem(id: string): Observable<IPortfolioItem | undefined> {
       return this.getPortfolioItems().pipe(
-       map((items: IPortfolioItem[]) => items.find(i => i.itemID === id))
+       map((items: IPortfolioItem[]) => items.find(i => i.id === id))
      ); 
    }
 

@@ -19,7 +19,7 @@ export class CaseStudyComponent implements OnInit {
 
   ngOnInit() {
   
-    const param = this.route.snapshot.paramMap.get('itemID');
+    const param = this.route.snapshot.paramMap.get('id');
     if (param) {
       this.getItem(param);
     }
