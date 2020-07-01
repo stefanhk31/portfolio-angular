@@ -4,8 +4,7 @@ import { PortfolioService } from './portfolio.service';
 
 @Component({
   selector: 'portfolio-items',
-  templateUrl: './portfolio-items.component.html',
-  styleUrls: ['./portfolio-items.component.scss']
+  templateUrl: './portfolio-items.component.html'
 })
 export class PortfolioItemsComponent implements OnInit {
 

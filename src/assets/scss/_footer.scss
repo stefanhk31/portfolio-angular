@@ -1,8 +1,9 @@
 footer {
-    background: $light_gray;
-    color: $dark_teal;
+    background: $dark_gray;
+    color: $light_gray;
     font-weight: 900;
     margin-top: -5px;
+    box-shadow: 0 0 75px rgba(141,141,141,.5);
 
     p {
         margin: 0;
