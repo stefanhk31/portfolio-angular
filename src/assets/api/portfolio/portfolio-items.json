@@ -57,7 +57,7 @@
   {
     "id": "sitStandTimer",
     "name": "Sit/Stand Timer",
-    "tagline": "A timer for switching work positions.",
+    "tagline": "A timer for switching between sitting and standing while working.",
     "previewImageUrl": "assets/img/sitstandtimer_preview.png",
     "detail": {
       "tech": [
@@ -84,7 +84,7 @@
   {
     "id": "dashLandingPage",
     "name": "D.A.S.H.",
-    "tagline": "Design and initial layout of a webpage.",
+    "tagline": "Alpha code for the webpage of a nationally-funded research project.",
     "previewImageUrl": "assets/img/dash_preview.png",
     "detail": {
       "tech": [
